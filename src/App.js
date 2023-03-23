@@ -22,7 +22,7 @@ function App() {
           </ul>
         </nav>
         <Routes>
-          <Route path='/super-heroes'element={SuperHeroesPage}/>          
+          <Route path='/super-heroes'element={<SuperHeroesPage/>}/>          
           <Route path='/rq-super-heroes' element={<RQSuperHeroesPage />}/>
           <Route path='/'element={<HomePage />}/>
         </Routes>
