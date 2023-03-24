@@ -5,7 +5,7 @@ const fetchSuperHeroes = ()=>{
     return axios.get("http://localhost:4000/superheroes")
 }
 
-export const useSuperHeroesData = (onSuccess,onError)=>{
+export const useSuperHeroesData = (onSuccess,onError,enabledState)=>{
     return useQuery('super-heroes',fetchSuperHeroes,
     {
         onSuccess:onSuccess,
@@ -13,6 +13,7 @@ export const useSuperHeroesData = (onSuccess,onError)=>{
         select:(data)=>{
             const superHeroNames = data.data.map(hero=>hero.name)
             return superHeroNames
-        }
+        },
+        enabled:enabledState
     })
 }
