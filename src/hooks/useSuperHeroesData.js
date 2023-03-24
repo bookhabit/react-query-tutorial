@@ -10,10 +10,10 @@ export const useSuperHeroesData = (onSuccess,onError,enabledState)=>{
     {
         onSuccess:onSuccess,
         onError:onError,
-        select:(data)=>{
-            const superHeroNames = data.data.map(hero=>hero.name)
-            return superHeroNames
-        },
-        enabled:enabledState
+        // select:(data)=>{
+        //     const superHeroNames = data.data.map(hero=>hero.name)
+        //     return superHeroNames
+        // },
+        // enabled:enabledState
     })
 }
