@@ -19,6 +19,11 @@
       "name": "토르",
       "alterEgo": "마블",
       "id": 4
+    },
+    {
+      "name": "아이언맨",
+      "alterEgo": "부자",
+      "id": 5
     }
   ],
   "friends": [
