@@ -23,7 +23,7 @@ export const RQSuperHeroesPage = () => {
         addHero(hero)
     }
 
-    if(isLoading||isFetching){
+    if(isLoading){
         return <h2>로딩 중...</h2>
     }
     if(isError){
